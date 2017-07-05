@@ -44,13 +44,12 @@
              <h1>Події</h1>
              <nav>
              <ul>
-                 <li> 
-                    <a href="Нові_інформаційні_стенди_на_еколого-пізнавальній_стежці_«На водоспад Гук»">
+                 <li>
+                    <a href="http://cnnp.if.ua/holovna/9-public/novyny/341-novi-informatsiini-stendy-na-ekoloho-piznavalnii-stezhtsi-na-vodospad-huk">
 			        Нові інформаційні стенди на еколого-пізнавальній стежці «На водоспад Гук»</a>
                  </li>
                  <li>
-                     <a href="Тренінг-презентація_в_рамках
-                     "Зупинимо зміну клімату навчаючи молодь"
+                     <a href="http://cnnp.if.ua/holovna/9-public/novyny/340-treninh-prezentatsiia-v-ramkakh-proektu-zupynymo-zminu-klimatu-navchaiuchy-molod
                      ">Тренінг-презентація в рамках
                      "Зупинимо зміну клімату навчаючи молодь"</a>
                  </li>
@@ -59,9 +58,31 @@
          </section>
          <section id="gallery">
              <h1>Галерея</h1>
-             <img src="images.jpg" alt="images">
-             <img src="images1.jpg" alt="images1">
-             <img src="images2.jpg" alt="images2">
+             <div class="slide-show container">
+                 <div class="mySlides fade">
+                <div class="number text">1/3</div>
+             <img src="images.jpg" style="width:99%" alt="images">
+             <div class="text">Text</div>
+             </div>
+             <div class="mySlides fade">
+             <div class="number text">2/3</div>
+             <img src="images1.jpg" style="width:99%" alt="images1">
+             <div class="text">Text</div>
+             </div>
+             <div class="mySlides fade">
+             <div class="number text">3/3</div>
+             <img src="images2.jpg" style="width:99%" alt="images2">
+             <div class="text">Text</div>
+             </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+             <a class="next" onclick="plusSlides(1)">&#10095</a>
+             </div>
+             <br>
+             <div style="text-align:center;">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+             </div>
          </section>
              <section id="links">
                  <div>
@@ -78,13 +99,14 @@
              <h1>Контакти</h1>
             <h3>Також ви можете зв'язатися з нами тут</h3>
         	<form action="">
-        	    <input type="text" placeholder="Ваше ім'я"><br>
-        		<input type="email" placeholder="Ваш e-mail"><br>
-        		<textarea placeholder="Message"></textarea><br>
-                <input type="submit" value="Надіслати">
+        	    <input type="text" action="name"  id = "name" placeholder="Ваше ім'я"><br>
+        		<input type="email" action="email" id = "e-mail" placeholder="Ваш e-mail"><br>
+        		<textarea placeholder="Message" action="Message" id="Message"></textarea><br>
+                <input type="submit" action="send" id="send" value="Надіслати">
         	</form>
         	</div>
         	</footer>
- </div>      	
+ </div>    
+ <script src="idex.js"></script>
 </body>
 </html>
