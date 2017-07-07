@@ -9,7 +9,7 @@ body {
     border:double black;
     border-style:4px double black;
     padding:10px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1ISG3QRcQx8gU4oIrfwbdibnWIg7BbuC42lkqIIT4xMMfWbHfQ);
+    background-image: url("http://pattern4site.ru/images/priroda/_thumb/4-fon-dlya-sayta.jpg");
 }
 
 .header {
@@ -49,15 +49,52 @@ p {
 events{
     display:inline-block;
 }
-.slideshow-container{
-    max-width: 1000px;
-    position:relative;
-    margin: auto;
+.carousel-list {    
+    list-style: none;
 }
-.prev , .next{
+ 
+.carousel-element {
+    display: inline;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+.carousel-hider {
+    width: 945px;
+    overflow: hidden;
+    float: left;
+}
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
     cursor: pointer;
-    width: auto;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
+    background-color: grey;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="imagesNPP.jpg" type="image/xicon">
 </head>
 <body>
     <div class="brd">
@@ -58,32 +59,20 @@
          </section>
          <section id="gallery">
              <h1>Галерея</h1>
-             <div class="slide-show container">
-                 <div class="mySlides fade">
-                <div class="number text">1/3</div>
-             <img src="images.jpg" style="width:99%" alt="images">
-             <div class="text">Text</div>
-             </div>
-             <div class="mySlides fade">
-             <div class="number text">2/3</div>
-             <img src="images1.jpg" style="width:99%" alt="images1">
-             <div class="text">Text</div>
-             </div>
-             <div class="mySlides fade">
-             <div class="number text">3/3</div>
-             <img src="images2.jpg" style="width:99%" alt="images2">
-             <div class="text">Text</div>
-             </div>
-             <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-             <a class="next" onclick="plusSlides(1)">&#10095</a>
-             </div>
-             <br>
-             <div style="text-align:center;">
-                 <span class="dot" onclick="currentSlide(1)"></span>
-                 <span class="dot" onclick="currentSlide(2)"></span>
-                 <span class="dot" onclick="currentSlide(3)"></span>
-             </div>
+             <div class="carousel-arrow-left"><span>left</span></div>
+             <div class="carousel-hider">
+              <ul class="carousel-list">
+             <li class="carousel-element"><img src="images.jpg" alt="images"></li>
+             <li class="carousel-element"><img src="images1.jpg"  alt="images1"></li>
+             <li class="carousel-element"><img src="images2.jpg" alt="images2"></li>
+             </ul>
+          </div>
+          <div class="carousel-arrow-right"><span>right</span></div>
          </section>
+         <br>
+         <br>
+         <br>
+         <br>
              <section id="links">
                  <div>
                  <h1>Посилання</h1>
@@ -108,5 +97,10 @@
         	</footer>
  </div>    
  <script src="idex.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </body>
 </html>
